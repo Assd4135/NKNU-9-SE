@@ -225,7 +225,7 @@ public class main {
 		se.button3.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(se.cl.equalsIgnoreCase("1"))
+				if(se.cl2 == 1)
 				{
 				frD.frD();
 				}
@@ -244,7 +244,7 @@ public class main {
 		se.button4.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(se.cl.equalsIgnoreCase("2"))
+				if(se.cl2 == 2)
 				{
 				frD.frD();
 				}

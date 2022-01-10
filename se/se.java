@@ -39,6 +39,11 @@ public class se  {
 	static String stac;
 	static String stpw;
 	static String stcl;
+	
+	static String stac2;
+	static String stpw2;
+	static String stcl2;
+	
 	static String anss;
 	static String ansu;
 	static String s;
@@ -49,6 +54,7 @@ public class se  {
 	static String cl;
 	static String[] answers = new String[10];
 	static String[] pw = new String[3];
+	static String[] stpd = new String[3];
 	static String textPath; // 題目位置
 	static String textword; // 新增題目的文字
 	static String userac = "410xxx0xx"; // 使用者帳號
@@ -69,6 +75,10 @@ public class se  {
 	static JLabel labelstac = new JLabel();
 	static JLabel labelstpw = new JLabel();
 	static JLabel labelstcl = new JLabel();
+	
+	static JLabel labelac = new JLabel();
+	static JLabel labelpw = new JLabel();
+	static JLabel labelcl = new JLabel();
 
 	static JTextArea jta = new JTextArea(10, 15); // 題目輸入欄
 	static JTextArea jtac = new JTextArea(10, 15);

@@ -36,9 +36,9 @@ public class frsst {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				se.text = gmpw.getText();
-				readstpf.readstpf("C:\\Users\\USER\\Desktop\\login.csv");
-				stpd.stpd();
+				readstpf.readstpf();
 				framesst.dispose();
+				stpd.stpd();
 			}
 		});
 

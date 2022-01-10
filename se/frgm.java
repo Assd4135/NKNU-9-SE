@@ -39,7 +39,6 @@ public class frgm {
 				se.text = gmpw.getText();
 				if (se.text.equalsIgnoreCase("1amgm")) {
 					frsst.frsst();
-					readstpf.readstpf("C:\\Users\\USER\\Desktop\\login.csv");
 					framegm.dispose();
 				}
 				

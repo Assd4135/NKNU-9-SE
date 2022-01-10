@@ -20,31 +20,21 @@ public class personalalt {
 		framealt.setSize(800, 600);
 		framealt.setLocationRelativeTo(null);
 
-		JLabel labelac = new JLabel();
-		JLabel labelpw = new JLabel();
-		JLabel labelcl = new JLabel();
-		labelac.setBounds(20, 70, 200, 30);
-		labelpw.setBounds(20, 110, 200, 30);
-		labelac.setFont(new Font("微軟正黑體", Font.BOLD, 15));
-		labelpw.setFont(new Font("微軟正黑體", Font.BOLD, 15));
-		labelcl.setBounds(20, 150, 200, 30);
-		labelcl.setFont(new Font("微軟正黑體", Font.BOLD, 15));
+		
+		se.labelac.setBounds(20, 70, 200, 30);
+		se.labelpw.setBounds(20, 110, 200, 30);
+		se.labelac.setFont(new Font("微軟正黑體", Font.BOLD, 15));
+		se.labelpw.setFont(new Font("微軟正黑體", Font.BOLD, 15));
+		se.labelcl.setBounds(20, 150, 200, 30);
+		se.labelcl.setFont(new Font("微軟正黑體", Font.BOLD, 15));
 
-		labelac.setText("學號" + " " + se.userac);
-		labelpw.setText("密碼" + " " + se.userpw);
+		se.labelac.setText("學號" + " " + se.userac);
+		se.labelpw.setText("密碼" + " " + se.userpw);
 		
-		if(se.pw[2].equalsIgnoreCase("1"))
-		{
-			labelcl.setText("Class A");
-		}
-		else if(se.pw[2].equalsIgnoreCase("2"))
-		{
-			labelcl.setText("Class B");
-		}
 		
-		framealt.add(labelac);
-		framealt.add(labelpw);
-		framealt.add(labelcl);
+		framealt.add(se.labelac);
+		framealt.add(se.labelpw);
+		framealt.add(se.labelcl);
 
 		JButton buttonpwlt = new JButton("更改");
 

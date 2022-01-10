@@ -11,8 +11,9 @@ public class CreateAc {
 
 	public static void CreateAc() {
 		BufferedWriter fw = null;
-		String ss;
+		String ss ;
 		for (int i = 0; i < 101; i++) {
+			se.cl = "1";
 			ss = Integer.toString(i);
 			if(i>49) {
 				se.cl = "2";

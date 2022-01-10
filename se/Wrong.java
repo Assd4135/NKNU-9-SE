@@ -18,7 +18,7 @@ public class Wrong {
 		framed.setSize(300, 300);
 		framed.setLocationRelativeTo(null);
 
-		JLabel labelw = new JLabel("wrong");
+		JLabel labelw = new JLabel("ERROR");
 		framed.getContentPane().add(labelw);
 		labelw.setForeground(new Color(0xFF0000));
 		labelw.setFont(new Font("Arial Black", Font.BOLD, 20));

@@ -12,22 +12,22 @@ public class alt {
 		File writename = new File("C:\\Users\\USER\\Desktop\\" + se.stac + ".txt");
 		BufferedWriter br = new BufferedWriter(new FileWriter(writename));
 		if (writename.isFile() && writename.exists()) {
-			br.write(se.stac + " ");
-			br.newLine();
-			br.write(se.stpw + " ");
-			br.newLine();
+			br.write(se.stac + ",");
+			
+			br.write(se.stpw + ",");
+			
 			br.write(se.stcl + "\n" );
-			br.newLine();
+			
 			br.flush();
 			br.close();
 		} else {
 
-			br.write(se.stac + " " );
-			br.newLine();
-			br.write(se.stpw + " " );
-			br.newLine();
+			br.write(se.stac + "," );
+			
+			br.write(se.stpw + "," );
+			
 			br.write(se.stcl + "\n");
-			br.newLine();
+			
 			br.flush();
 			br.close();
 
