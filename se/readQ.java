@@ -30,7 +30,7 @@ public class readQ {
 					new InputStreamReader(new FileInputStream("C:\\Users\\USER\\Desktop\\text.csv"), "UTF-8"));
 			while ((str = reader.readLine()) != null) // loops through every line until null found
 			{
-				String tempArray[] = str.split("\\,");
+				String tempArray[] = str.split(",");
 				topic.add(tempArray[0]);
 				answer.add(tempArray[1]);
 				difficulty.add(tempArray[2]);

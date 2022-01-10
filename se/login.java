@@ -11,15 +11,18 @@ public class login {
 			if (se.pww.equalsIgnoreCase(se.pw[1])) {
 				se.userac = se.acc;
 				se.userpw = se.pw[1];
-				se.key = true;
 				se.cl = se.pw[2];
+				se.cl2 = Integer.parseInt(se.pw[2]);
+				se.key = true;
+				return true;
 			}
 		} else if (se.acc.equalsIgnoreCase(se.pw[0])) {
 			if (se.pww.equalsIgnoreCase(se.pw[1])) {
 				se.userac = se.pw[0];
 				se.userpw = se.pw[1];
-				se.key = true;
 				se.cl = se.pw[2];
+				se.cl2 = Integer.parseInt(se.pw[2]);
+				se.key = true;
 				return true;
 			}
 		}

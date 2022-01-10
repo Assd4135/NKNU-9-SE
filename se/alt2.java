@@ -9,7 +9,6 @@ public class alt2 {
 		try {
 			writePassword.writePassword("C:\\Users\\USER\\Desktop\\" + se.acc + ".txt");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

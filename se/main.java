@@ -281,7 +281,7 @@ public class main {
 				frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 				JLabel label2 = new JLabel("LOGIN");
-				frame2.add(label2);
+				frame2.getContentPane().add(label2);
 				label2.setForeground(new Color(0xF75000));
 				label2.setFont(new Font("Arial Black", Font.PLAIN, 40));
 				label2.setBackground(new Color(0xFFFFFF)); // 背景顏色
@@ -308,6 +308,22 @@ public class main {
 				label2.add(account);
 				account.setBounds(200, 350, 200, 40);
 				password.setBounds(200, 400, 200, 40);
+				
+				JButton buttonGM = new JButton("GM");
+				label2.add(buttonGM);
+				buttonGM.setBounds(250, 520, 100, 30);
+				buttonGM.setFont(new Font("Arial Black", Font.PLAIN, 10));
+				buttonGM.setForeground(new Color(0xF75000));
+				buttonGM.setBackground(new Color(0xF0F0F0));
+				buttonGM.setBorder(BorderFactory.createLineBorder(new Color(0xFFBD9D), 5));
+				buttonGM.addActionListener(new ActionListener() {
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						
+						frgm.frgm();
+					}
+				});
+
 
 				JButton button2 = new JButton("LOGIN");
 				label2.add(button2);
@@ -351,7 +367,7 @@ public class main {
 						frame3.setJMenuBar(menubar);
 
 						JLabel label3 = new JLabel("KYUTES");
-						frame3.add(label3);
+						frame3.getContentPane().add(label3);
 						label3.setForeground(new Color(0xF75000));
 						label3.setFont(new Font("Arial Black", Font.PLAIN, 40));
 						label3.setBackground(new Color(0xFFFFFF)); // 背景顏色
@@ -364,7 +380,7 @@ public class main {
 
 			}
 		});
-
+		
 		label.setText("KYUTES"); // 標籤
 		label.setIcon(image); // ICON
 		label.setHorizontalTextPosition(JLabel.RIGHT);
@@ -381,7 +397,7 @@ public class main {
 		frame.setTitle("KYUTES");
 		frame.setVisible(true);
 		frame.setSize(600, 600); // 視窗大小
-		frame.add(label); // 新增至視窗
+		frame.getContentPane().add(label); // 新增至視窗
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		label.add(button);

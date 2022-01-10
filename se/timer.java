@@ -9,13 +9,19 @@ import javax.swing.JLabel;
 
 public class timer {
 
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	public static void timer() {
+		JFrame jframetime = new JFrame();
+		jframetime.setResizable(false);
 		JLabel jLabelt = new JLabel();
-		se.jframetime.setLayout(new FlowLayout());
-		se.jframetime.setTitle("時間");
-		se.jframetime.setSize(400, 100);
-		se.jframetime.add(jLabelt);
-		se.jframetime.setVisible(true);
+		
+		jframetime.getContentPane().setLayout(new FlowLayout());
+		jframetime.setTitle("時間");
+		jframetime.setSize(400, 100);
+		jframetime.getContentPane().add(jLabelt);
+		jframetime.setVisible(true);
 		Timer timer = new Timer();
 		timer.scheduleAtFixedRate(new TimerTask() {
 			int i = 600;

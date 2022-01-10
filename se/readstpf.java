@@ -5,11 +5,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 
-import javax.swing.JLabel;
+public class readstpf {
 
-public class readpf {
-
-	public static String readpf(String filePath) {
+	public static String readstpf(String filePath) {
 		final String delimiter = ",";
 		try {
 			File file = new File(filePath);
@@ -21,8 +19,19 @@ public class readpf {
 					String[] token = lineTxt.split(delimiter);
 					for (int i = 0; i < token.length; i++) {
 						se.pw[i] = token[i];
+						if (se.pw[0].equalsIgnoreCase(se.text)) {
+							se.labelstac.setText(se.pw[0]);
+							se.labelstpw.setText(se.pw[1]);
+							if(se.pw[2].equalsIgnoreCase("1"))
+							{
+								se.labelstcl.setText("Class A");
+							}
+							else if(se.pw[2].equalsIgnoreCase("2"))
+							{
+								se.labelstcl.setText("Class B");
+							}
+						}
 					}
-					login.login();
 				}
 			}
 		} catch (Exception e) {
@@ -32,6 +41,5 @@ public class readpf {
 		return filePath;
 
 	}
-
 
 }

@@ -18,11 +18,14 @@ import javax.swing.JLabel;
 
 public class frAllText {
 
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	public static void frAllText() throws IOException {
 
 		ReadAllText.ReadAllText();
 		JFrame frameall = new JFrame();
-		frameall.setLayout(null);
+		frameall.getContentPane().setLayout(null);
 		frameall.setTitle("題目");
 		frameall.setVisible(true);
 		frameall.setSize(200, 200);
@@ -53,8 +56,8 @@ public class frAllText {
 		se.labeltext.setHorizontalAlignment(JLabel.CENTER); // 調整標籤位置
 		se.labeltext.setVerticalAlignment(JLabel.CENTER);
 
-		frameall.add(se.labeltext);
-		frameall.add(buttonall);
+		frameall.getContentPane().add(se.labeltext);
+		frameall.getContentPane().add(buttonall);
 	}
 
 }

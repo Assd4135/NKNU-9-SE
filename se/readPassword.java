@@ -17,8 +17,11 @@ public class readPassword {
 				InputStreamReader read = new InputStreamReader(new FileInputStream(file));// 考慮到編碼格式
 				BufferedReader br = new BufferedReader(read);
 				String lineTxt = null;
-				while ((lineTxt = br.readLine()) != null) {
-					se.pw[1] = lineTxt;
+				for (int i = 0; i < 3; i++) {
+					while ((lineTxt = br.readLine()) != null) {
+						se.pw[i] = lineTxt;
+						System.out.println(lineTxt);
+					}
 				}
 			}
 		} catch (Exception e) {

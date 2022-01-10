@@ -11,16 +11,19 @@ import javax.swing.JLabel;
 
 public class frstsc {
 
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	public static void frstsc(String filepath) {
 		JFrame framest = new JFrame();
-		framest.setLayout(new FlowLayout());
+		framest.getContentPane().setLayout(new FlowLayout());
 		framest.setTitle("¤À¼Æ");
 		framest.setVisible(true);
-		framest.setSize(400, 400);
+		framest.setSize(400, 293);
 		framest.setLocationRelativeTo(null);
 		
 		JLabel sc = new JLabel();
-		framest.add(sc);
+		framest.getContentPane().add(sc);
 		
 		final String delimiter = ",";
 		try {

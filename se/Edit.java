@@ -12,13 +12,19 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 public class Edit {
 	static int t = 0;
+	private static JTextField textField;
 
+	/**
+	 * @wbp.parser.entryPoint
+	 */
 	public static void Edit() {
 		JFrame framed = new JFrame();
-		framed.setLayout(null);
+		framed.getContentPane().setLayout(null);
 		framed.setTitle("½s¿èÃD®w");
 		framed.setVisible(true);
 		framed.setSize(900, 600);
@@ -50,24 +56,45 @@ public class Edit {
 		JTextArea jta3 = new JTextArea(10, 15);
 
 		se.jta.setBounds(50, 300, 250, 200);
-		framed.add(se.jta);
-		jta2.setBounds(320, 300, 250, 200);
-		framed.add(jta2);
-		jta3.setBounds(590, 300, 250, 200);
-		framed.add(jta3);
+		framed.getContentPane().add(se.jta);
+		jta2.setBounds(688, 410, 120, 90);
+		framed.getContentPane().add(jta2);
+		jta3.setBounds(688, 300, 120, 90);
+		framed.getContentPane().add(jta3);
 
-		framed.add(math);
-		framed.add(en);
-		framed.add(buttont);
+		framed.getContentPane().add(math);
+		framed.getContentPane().add(en);
+		framed.getContentPane().add(buttont);
+		
+		textField = new JTextField();
+		textField.setBounds(50, 300, 609, 200);
+		framed.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblNewLabel = new JLabel("\u984C\u76EE");
+		lblNewLabel.setEnabled(false);
+		lblNewLabel.setBounds(55, 281, 46, 15);
+		framed.getContentPane().add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("\u7B54\u6848");
+		lblNewLabel_1.setEnabled(false);
+		lblNewLabel_1.setBounds(688, 281, 46, 15);
+		framed.getContentPane().add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("\u96E3\u5EA6");
+		lblNewLabel_2.setEnabled(false);
+		lblNewLabel_2.setBounds(688, 392, 46, 15);
+		framed.getContentPane().add(lblNewLabel_2);
 		buttont.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-					se.textword = se.jta.getText();
+					se.textword = textField.getText();
 					se.textans = jta2.getText();
 					se.textd = jta3.getText();
 					if (math.isSelected()) {
 						try {
 							writetext.writetext("C:\\Users\\USER\\Desktop\\text.csv");
+							succeeded.succeeded();
 						} catch (IOException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
@@ -76,6 +103,7 @@ public class Edit {
 					if (en.isSelected()) {
 						try {
 							writetext.writetext("C:\\Users\\USER\\Desktop\\text.csv");
+							succeeded.succeeded();
 						} catch (IOException e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
@@ -84,5 +112,4 @@ public class Edit {
 			}
 		});
 	}
-
 }

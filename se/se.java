@@ -36,13 +36,17 @@ public class se  {
 	static String pww; // 判斷密碼
 	static String acc; // 判斷帳號
 	static String stacc;
+	static String stac;
+	static String stpw;
+	static String stcl;
 	static String anss;
 	static String ansu;
 	static String s;
+	static String text;
 	static String textd;
 	static String textans;
 	static String sscc;
-	static String cl = "1";
+	static String cl;
 	static String[] answers = new String[10];
 	static String[] pw = new String[3];
 	static String textPath; // 題目位置
@@ -61,6 +65,10 @@ public class se  {
 	static JLabel jLabesc2 = new JLabel();
 	static JLabel labelcc = new JLabel();
 	static JLabel labeltext = new JLabel();
+	
+	static JLabel labelstac = new JLabel();
+	static JLabel labelstpw = new JLabel();
+	static JLabel labelstcl = new JLabel();
 
 	static JTextArea jta = new JTextArea(10, 15); // 題目輸入欄
 	static JTextArea jtac = new JTextArea(10, 15);
@@ -68,10 +76,10 @@ public class se  {
 	static JTextArea ans = new JTextArea(10, 15);
 	static JFrame frameff = new JFrame();
 	static JFrame frame4 = new JFrame();
-	static JFrame jframetime = new JFrame();
 	static int root = 1; // 1 學生 2 老師 3 系統管理者 // 權限
 	static int diff;
 	static int scc = 100;
+	static int cl2;
 	static boolean examm = false; // 判斷是否為測驗
 	static boolean key = false;
 	static boolean alt = false;

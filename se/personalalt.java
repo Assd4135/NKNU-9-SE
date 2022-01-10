@@ -33,12 +33,15 @@ public class personalalt {
 		labelac.setText("¾Ç¸¹" + " " + se.userac);
 		labelpw.setText("±K½X" + " " + se.userpw);
 		
-		if(se.cl.equalsIgnoreCase("1")) {
-			labelcl.setText("class A");
+		if(se.pw[2].equalsIgnoreCase("1"))
+		{
+			labelcl.setText("Class A");
 		}
-		else if(se.cl.equalsIgnoreCase("2")) {
-			labelcl.setText("class B");
+		else if(se.pw[2].equalsIgnoreCase("2"))
+		{
+			labelcl.setText("Class B");
 		}
+		
 		framealt.add(labelac);
 		framealt.add(labelpw);
 		framealt.add(labelcl);

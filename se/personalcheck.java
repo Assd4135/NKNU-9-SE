@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 public class personalcheck {
 
 	public static void personalcheck() {
+		
 		JFrame framech = new JFrame();
 		framech.setLayout(null);
 		framech.setTitle("個人資料查看");
@@ -25,14 +26,21 @@ public class personalcheck {
 		labelcl.setBounds(20, 150, 200, 30);
 		labelcl.setFont(new Font("微軟正黑體", Font.BOLD, 15));
 
-		if (se.cl.equalsIgnoreCase("1")) {
-			labelcl.setText("class A");
-		}
-		else if (se.cl.equalsIgnoreCase("2")) {
-			labelcl.setText("class B");
-		}
+		System.out.println(se.cl);
+		
+		//se.cl2 = Integer.parseInt(se.cl);
+		
 		labelac.setText("學號" + " " + se.userac);
 		labelpw.setText("密碼" + " " + se.userpw);
+		
+		if(se.pw[2].equalsIgnoreCase("1"))
+		{
+			labelcl.setText("Class A");
+		}
+		else if(se.pw[2].equalsIgnoreCase("2"))
+		{
+			labelcl.setText("Class B");
+		}
 
 		framech.add(labelac);
 		framech.add(labelpw);
