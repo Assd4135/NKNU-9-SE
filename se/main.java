@@ -309,7 +309,7 @@ public class main {
 				account.setBounds(200, 350, 200, 40);
 				password.setBounds(200, 400, 200, 40);
 				
-				JButton buttonGM = new JButton("GM");
+				JButton buttonGM = new JButton("SM");
 				label2.add(buttonGM);
 				buttonGM.setBounds(250, 520, 100, 30);
 				buttonGM.setFont(new Font("Arial Black", Font.PLAIN, 10));
