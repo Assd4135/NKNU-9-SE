@@ -44,6 +44,17 @@ public class se  {
 	static String stpw2;
 	static String stcl2;
 	
+	static String q1;
+	static String q2;
+	static String q3;
+	static String q4;
+	static String q5;
+	static String q6;
+	static String q7;
+	static String q8;
+	static String q9;
+	static String q10;
+	
 	static String anss;
 	static String ansu;
 	static String s;
@@ -85,7 +96,6 @@ public class se  {
 	static JTextArea jtpw = new JTextArea(10, 15);
 	static JTextArea ans = new JTextArea(10, 15);
 	static JFrame frameff = new JFrame();
-	static JFrame frame4 = new JFrame();
 	static int root = 1; // 1 學生 2 老師 3 系統管理者 // 權限
 	static int diff;
 	static int scc = 100;

@@ -24,16 +24,17 @@ public class textpaper {
 	public static void textpaper() {
 		
 		
-		labelt1.setText(se.quiz[0]);
-		labelt2.setText(se.quiz[1]);
-		labelt3.setText(se.quiz[2]);
-		labelt4.setText(se.quiz[3]);
-		labelt5.setText(se.quiz[4]);
-		labelt6.setText(se.quiz[5]);
-		labelt7.setText(se.quiz[6]);
-		labelt8.setText(se.quiz[7]);
-		labelt9.setText(se.quiz[8]);
-		labelt10.setText(se.quiz[9]);
+		labelt1.setText(se.q1);
+		labelt2.setText(se.q2);
+		labelt3.setText(se.q3);
+		labelt4.setText(se.q4);
+		labelt5.setText(se.q5);
+		labelt6.setText(se.q6);
+		labelt7.setText(se.q7);
+		labelt8.setText(se.q8);
+		labelt9.setText(se.q9);
+		labelt10.setText(se.q10);
+		
 		se.anss = se.answers[0] + se.answers[1] + se.answers[2] + se.answers[3] + se.answers[4] + se.answers[5] + se.answers[6] + se.answers[7]
 				+ se.answers[8] + se.answers[9];
 		
@@ -41,6 +42,8 @@ public class textpaper {
 		{
 			System.out.println(se.quiz[i] + " " + se.answers[i]);
 		}
+		
+		Text.Text();
 
 	}
 

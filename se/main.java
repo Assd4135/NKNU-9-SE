@@ -180,7 +180,7 @@ public class main {
 				readQ.readQ("C:\\Users\\USER\\Desktop\\text.csv");
 				se.frameff.dispose();
 				textpaper.textpaper();
-				Text.Text();
+				
 				
 			}
 		});
@@ -197,7 +197,7 @@ public class main {
 				readQ.readQ("C:\\Users\\USER\\Desktop\\text.csv");
 				se.frameff.dispose();
 				textpaper.textpaper();
-				Text.Text();
+				
 			}
 		});
 
@@ -213,7 +213,7 @@ public class main {
 				readQ.readQ("C:\\Users\\USER\\Desktop\\text.csv");
 				se.frameff.dispose();
 				textpaper.textpaper();
-				Text.Text();
+				
 			}
 		});
 		

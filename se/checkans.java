@@ -24,6 +24,5 @@ public class checkans {
 		}
 		
 		frsc.frsc();
-		se.frame4.dispose();
 	}
 }

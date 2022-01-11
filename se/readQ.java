@@ -45,7 +45,7 @@ public class readQ {
 			Data[i][1] = (String) answer.get(i);
 			Data[i][2] = (String) difficulty.get(i);
 		}
-		
+
 		for (int i = 0; i < Data.length; i++) {
 			if (Data[i][2].equalsIgnoreCase("1")) {
 				ez += 1;
@@ -124,9 +124,20 @@ public class readQ {
 				se.answers[count] = a[count];
 				count++;
 			}
-			
-		}
-	}
 
+		}
+
+		se.q1 = se.quiz[0] ;
+		se.q2 = se.quiz[1] ;
+		se.q3 = se.quiz[2] ;
+		se.q4 = se.quiz[3] ;
+		se.q5 = se.quiz[4] ;
+		se.q6 = se.quiz[5] ;
+		se.q7 = se.quiz[6] ;
+		se.q8 = se.quiz[7] ;
+		se.q9 = se.quiz[8] ;
+		se.q10 = se.quiz[9] ;
+
+	}
 
 }

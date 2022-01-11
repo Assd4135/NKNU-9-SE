@@ -1,12 +1,15 @@
 package se;
 
 import java.awt.Color;
+import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class Text {
 
@@ -14,12 +17,13 @@ public class Text {
 	 * @wbp.parser.entryPoint
 	 */
 	public static void Text() {
-
-		se.frame4.getContentPane().setLayout(null);
-		se.frame4.setTitle("題目");
-		se.frame4.setVisible(true);
-		se.frame4.setSize(2000, 1500);
-		se.frame4.setLocationRelativeTo(null);
+		JFrame frame4 = new JFrame();
+		frame4.setVisible(true);
+		frame4.setLayout(null);
+		frame4.setSize(2000, 1500);
+		
+		JPanel panel = new JPanel();
+		frame4.add(panel);
 
 		textpaper.labelt1.setBounds(0, 10, 1500, 50);
 		textpaper.labelt2.setBounds(0, 60, 1500, 50);
@@ -44,19 +48,12 @@ public class Text {
 		textpaper.labelt10.setFont(new Font("Arial Black", Font.BOLD, 13));
 		
 		
-		se.frame4.getContentPane().add(textpaper.labelt1);
-		se.frame4.getContentPane().add(textpaper.labelt2);
-		se.frame4.getContentPane().add(textpaper.labelt3);
-		se.frame4.getContentPane().add(textpaper.labelt4);
-		se.frame4.getContentPane().add(textpaper.labelt5);
-		se.frame4.getContentPane().add(textpaper.labelt6);
-		se.frame4.getContentPane().add(textpaper.labelt7);
-		se.frame4.getContentPane().add(textpaper.labelt8);
-		se.frame4.getContentPane().add(textpaper.labelt9);
-		se.frame4.getContentPane().add(textpaper.labelt10);
+		
 
 		se.ans.setBounds(700, 700, 500, 100);
-		se.frame4.getContentPane().add(se.ans);
+		panel.add(se.ans);
+		
+		
 
 		JButton buttonans = new JButton("繳交");
 		buttonans.setFont(new Font("標楷體", Font.PLAIN, 20));
@@ -68,16 +65,35 @@ public class Text {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				checkans.checkans();
-				se.frame4.dispose();
+				frame4.dispose();
 			}
 		});
 		
-		se.	frame4.getContentPane().add(buttonans);
+		
+		panel.setBounds(0, 0, 2000, 1500);
+		panel.setLayout(null);
+		panel.setName("題目");
+		panel.setVisible(true);
+
+		
+		panel.add(textpaper.labelt1);
+		panel.add(textpaper.labelt2);
+		panel.add(textpaper.labelt3);
+		panel.add(textpaper.labelt4);
+		panel.add(textpaper.labelt5);
+		panel.add(textpaper.labelt6);
+		panel.add(textpaper.labelt7);
+		panel.add(textpaper.labelt8);
+		panel.add(textpaper.labelt9);
+		panel.add(textpaper.labelt10);
+		panel.add(buttonans);
+		se.ans.setBounds(700, 700, 500, 100);
+		panel.add(se.ans);
+		
 
 		if (se.examm == true) {
 			timer.timer();
 		}
 
 	}
-
 }
